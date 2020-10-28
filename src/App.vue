@@ -1,28 +1,41 @@
+
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app id="app">
+    <Menu/>
+    <Drawer/>
+    <Jumbotron/>
+   <v-main>
+     <router-view></router-view>
+   </v-main>
+   <MenuFooter/>
+   <Footer/>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Menu from './components/Menu'
+import Drawer from './components/Drawer'
+import Jumbotron from './components/Jumbotron'
+import MenuFooter from './components/MenuFooter'
+import Footer  from './components/Footer'
+
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+   Menu,
+   Jumbotron,
+    Footer,
+    Drawer,
+    MenuFooter
+ 
+  },
+
+  data: () => {
+    return {
+
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
