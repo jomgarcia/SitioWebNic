@@ -62,7 +62,7 @@
 </template>
 <script>
 export default {
-  
+  // @ is an alias to /src
   components:{
     BannerCisco: () => import ('@/components/BannerCisco'),
     CardPhone: () => import ('@/components/CardPhone'),

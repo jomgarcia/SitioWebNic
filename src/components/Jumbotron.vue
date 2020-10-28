@@ -1,4 +1,7 @@
 <template>
+<div id="inicio">
+
+
   <v-sheet
     :height="$vuetify.breakpoint.smAndUp ? '100vh' : '100vh'"
     color="primary"
@@ -25,7 +28,8 @@
                   :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'display-2'"
                   class="mb-2"
                   v-text="title"
-                />
+                >
+                </h1>
                 <div
                   class="title font-weight-light"
                   v-text="subtitle"
@@ -89,6 +93,7 @@
     </v-img>
     
   </v-sheet>
+  </div>
 </template>
 
 <script>
@@ -98,16 +103,16 @@
         inicio: {
           title: 'PROMUEVA SU PERFIL EMPRESARIAL CON UN DOMINIO .NI',
           subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dolor scelerisque dui praesent ullamcorper.'
-        }
-        // services: {
+        },
+        // quienessomos: {
         //   title: 'Next Generation Development Today',
         //   subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
         // },
-        // projects: {
+        // masionvision: {
         //   title: 'Premium Quality and Branding',
         //   subtitle: 'Vestibulum turpis sem, aliquet eget, lobortis pellentesque.'
         // },
-        // contact: {
+        // contactenos: {
         //   title: 'Contact Alpha Construction',
         //   subtitle: 'Aenean viverra rhoncus pede. Morbi mollis tellus ac sapien.'
         // }
@@ -124,7 +129,7 @@
         return this.$route.name.toLowerCase()
       },
       image () {
-        return '/static/' + this.namespace + 'team.jpg'
+        return '/static/' + this.namespace + '-hero.png'
       },
       subtitle () {
         return this.titles[this.namespace].subtitle

@@ -1,0 +1,75 @@
+<template>
+    <v-app>
+        <Menu />
+        <Drawer />
+        <Jumbotron />
+        <View />
+        <Menufooter />
+        <Footer />
+
+    </v-app>
+</template>
+<script>
+export default {
+     metaInfo: {
+      titleTemplate: '%s — Nic'
+    },
+
+    components: {
+        Drawer: () => import ('@/components/Drawer'),
+        Footer: () => import ('@/components/Footer'),
+        MenuFooter: () => import ('@/components/MenuFooter'),
+        Menu: () => import ('@/components/Menu'),
+        Jumbotron: () => import ('@/components/Jumbotron'),
+        View: () => import ('@/components/View')
+    }
+}
+</script>
+
+
+
+<template>
+  <v-app id="app">
+    <Menu/>
+    <Drawer/>
+    <Jumbotron/>
+   <v-main>
+     <router-view></router-view>
+   </v-main>
+   <MenuFooter/>
+   <Footer/>
+  </v-app>
+</template>
+
+<script>
+import Menu from './components/Menu'
+import Drawer from './components/Drawer'
+import Jumbotron from './components/Jumbotron'
+import MenuFooter from './components/MenuFooter'
+import Footer  from './components/Footer'
+
+
+export default {
+  name: 'App',
+
+  components: {
+   Menu,
+   Jumbotron,
+    Footer,
+    Drawer,
+    MenuFooter
+ 
+  },
+  metaInfo () {
+      return {
+        titleTemplate: '%s — Nic'
+      }
+    },
+
+  watch: {
+      $route: function () {
+        this.$nextTick(() => this.$vuetify.goTo(0))
+      }
+    }
+}
+</script>

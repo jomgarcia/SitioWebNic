@@ -48,7 +48,7 @@
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
-              <v-list-item-title v-text="item.text" />
+              <v-list-item-title class="lista" v-text="item.text" />
         </v-list-item>
       <v-list-group
        no-action
@@ -56,7 +56,7 @@
         prepend-icon="mdi-account-circle"
       >
         <template v-slot:activator>
-          <v-list-item-title>Nosotros</v-list-item-title>
+          <v-list-item-title class="lista">Nosotros</v-list-item-title>
         </template>
         <v-list-item
             v-for="(link, index) in links" :key="index" router :to="link.route"
@@ -64,7 +64,7 @@
             text
           >
            
-            <v-list-item-title>{{ link.text }}</v-list-item-title>
+            <v-list-item-title class="lista">{{ link.text }}</v-list-item-title>
           </v-list-item>
       </v-list-group>
        <v-list-group
@@ -73,14 +73,14 @@
         prepend-icon="mdi-earth"
       >
         <template v-slot:activator>
-          <v-list-item-title>Dominios</v-list-item-title>
+          <v-list-item-title class="lista">Dominios</v-list-item-title>
         </template>
         <v-list-item
              v-for="(link, index) in links2" :key="index" router :to="link.route"
             link
             text
           >
-               <v-list-item-title>{{ link.text }}</v-list-item-title>
+               <v-list-item-title class="lista">{{ link.text }}</v-list-item-title>
           </v-list-item>
       </v-list-group>
       <v-list-item-group>
@@ -88,13 +88,13 @@
             <v-list-item-icon>
               <v-icon>mdi-contacts</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Contáctenos</v-list-item-title>
+            <v-list-item-title class="lista">Contáctenos</v-list-item-title>
           </v-list-item>
            <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-login</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Iniciar Sesión</v-list-item-title>
+            <v-list-item-title class="lista">Iniciar Sesión</v-list-item-title>
           </v-list-item>
      </v-list-item-group>
     </v-list>
@@ -154,5 +154,7 @@
   }
 </script>
 <style>
-
+.lista{
+  color: #fff !important;
+}
 </style>

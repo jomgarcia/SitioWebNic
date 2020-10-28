@@ -1,41 +1,29 @@
-
 <template>
-  <v-app id="app">
-    <Menu/>
-    <Drawer/>
-    <Jumbotron/>
-   <v-main>
-     <router-view></router-view>
-   </v-main>
-   <MenuFooter/>
-   <Footer/>
-  </v-app>
+    <v-app>
+        <Menu />
+        <Drawer />
+        <Jumbotron />
+        <Vista />
+        <MenuFooter />
+        <Footer />
+
+    </v-app>
 </template>
-
 <script>
-import Menu from './components/Menu'
-import Drawer from './components/Drawer'
-import Jumbotron from './components/Jumbotron'
-import MenuFooter from './components/MenuFooter'
-import Footer  from './components/Footer'
-
-
 export default {
-  name: 'App',
+     metaInfo: {
+      titleTemplate: '%s — Nic'
+    },
 
-  components: {
-   Menu,
-   Jumbotron,
-    Footer,
-    Drawer,
-    MenuFooter
- 
-  },
-
-  data: () => {
-    return {
-
+    components: {
+        Drawer: () => import ('@/components/Drawer'),
+        Footer: () => import ('@/components/Footer'),
+        MenuFooter: () => import ('@/components/MenuFooter'),
+        Menu: () => import ('@/components/Menu'),
+        Jumbotron: () => import ('@/components/Jumbotron'),
+        Vista: () => import ('@/components/Vista')
     }
-  }
 }
 </script>
+
+

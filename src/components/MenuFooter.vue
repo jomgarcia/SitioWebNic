@@ -109,34 +109,157 @@
         cols="12"
         sm="4"
       >
-      <v-card
+          <v-card
+                color="#222222"
+                class="pa-2"
+                flat
+                tile  
+            >
+            <h4 class="pt-6 py-2 lista"
+              >CONÉCTATE A NUESTRAS REDES</h4>
+              <v-card-subtitle class="lista2">No perdamos el contacto y siguenos en:</v-card-subtitle>
+      
+               <!-- <v-list-item-icon class="lista-icon">
+                    <v-icon large left color="#17A2B8"
+                    >mdi-facebook</v-icon>
+                    <v-list-item-title class="lista"><a href="">Facebook</a></v-list-item-title>
+                </v-list-item-icon>
+            
+                <v-list-item-icon class="lista-icon">
+                    <v-icon large  left color="#17A2B8"
+                    >mdi-twitter</v-icon>
+                    <v-list-item-title class="lista"><a href="">Twitter</a></v-list-item-title>
+                </v-list-item-icon> -->
+                     <v-list  color="#222222">
+                <v-list-item>
+                    <v-list-item-icon>
+                    <v-icon color="#17A2B8">
+                        mdi-facebook
+                    </v-icon>
+                    </v-list-item-icon>
+
+                    <v-list-item-content>
+                    <v-list-item-title class="lista"><a href="">Facebook</a></v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                    <v-list-item-icon>
+                    <v-icon color="#17A2B8">
+                        mdi-twitter
+                    </v-icon>
+                    </v-list-item-icon>
+
+                    <v-list-item-content>
+                    <v-list-item-title class="lista"> <a href="">Twitter</a></v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                    <v-list-item-icon>
+                    <v-icon color="#17A2B8">
+                       mdi-instagram
+                    </v-icon>
+                    </v-list-item-icon>
+
+                    <v-list-item-content>
+                    <v-list-item-title class="lista"><a href="">Instagram</a></v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                    <v-list-item-icon>
+                    <v-icon color="#17A2B8">
+                       mdi-youtube
+                    </v-icon>
+                    </v-list-item-icon>
+
+                    <v-list-item-content>
+                    <v-list-item-title class="lista"><a href="">YouTube</a></v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                    <v-list-item-icon>
+                    <v-icon color="#17A2B8">
+                       mdi-linkedin
+                    </v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                    <v-list-item-title class="lista"><a href="">LinkedIn</a></v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+            </v-list>
+             </v-card>
+        </v-col>
+         <v-col
+        cols="12"
+        sm="4"
+      >
+        <v-card
             color="#222222"
             class="pa-2"
             flat
             tile  
         >
-        <h4 class="pt-6 py-2 lista"
-              >CONÉCTATE A NUESTRAS REDES</h4>
-              <v-card-subtitle class="lista2">No perdamos el contacto y siguenos en:</v-card-subtitle>
-            <v-list-item-icon>
-                <v-icon  left color="#17A2B8"
-                >mdi-facebook</v-icon>
-                <v-list-item-title class="lista"><a href="">Facebook</a></v-list-item-title>
-            </v-list-item-icon>
-      </v-card>
-       </v-col>
+            <h4 class="pt-6 py-2 lista"
+              >CONTÁCTENOS</h4>
+               <v-card-subtitle class="lista2">No perdamos el contacto y siguenos en:</v-card-subtitle>
+             <v-list two-line color="#222222">
+                <v-list-item>
+                    <v-list-item-icon>
+                    <v-icon color="#17A2B8">
+                        mdi-map-marker 
+                    </v-icon>
+                    </v-list-item-icon>
+
+                    <v-list-item-content>
+                    <v-list-item-title class="lista">Dirección</v-list-item-title>
+                    <v-list-item-action-text class="lista2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et a facilisis orci viverra. Bibendum tristique varius.</v-list-item-action-text>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-divider inset></v-divider>
+
+                <v-list-item>
+                    <v-list-item-icon>
+                    <v-icon color="#17A2B8">
+                        mdi-email
+                    </v-icon>
+                    </v-list-item-icon>
+
+                    <v-list-item-content>
+                    <v-list-item-title class="lista">¿Alguna pregunta?</v-list-item-title>
+                    <v-list-item-subtitle class="lista2">ventas@nic.ni</v-list-item-subtitle>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-divider inset></v-divider>
+
+                <v-list-item>
+                    <v-list-item-icon>
+                    <v-icon color="#17A2B8">
+                       mdi-phone
+                    </v-icon>
+                    </v-list-item-icon>
+
+                    <v-list-item-content>
+                    <v-list-item-title class="lista">Llámenos o escríbanos</v-list-item-title>
+                    <v-list-item-subtitle class="lista2">(505) 2222 2222 (505) 8888 8888</v-list-item-subtitle>
+                    </v-list-item-content>
+                </v-list-item>
+            </v-list>
+        </v-card>
+      </v-col>
     </v-row>
 </v-container>
 </v-footer>
 </template>
 <script>
 export default {
-    
+     
 }
 </script>
 
 <style>
-
+.lista-icon{
+    margin-right: 30px;
+    position: relative;
+}
 .lista2{
     color: #9E9E9E !important;
 }

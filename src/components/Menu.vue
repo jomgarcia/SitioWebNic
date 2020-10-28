@@ -171,7 +171,8 @@
         this.isScrolling = (window.pageYOffset ||
           document.documentElement.scrollTop || 0) > 25
       }
-    }
+    },
+    
   }
 </script>
 
