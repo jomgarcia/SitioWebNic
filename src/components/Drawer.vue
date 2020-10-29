@@ -84,6 +84,7 @@
           </v-list-item>
       </v-list-group>
       <v-list-item-group>
+        <div>
             <v-list-item
                 v-for="(item, i) in items1"
                 :key="i"
@@ -97,7 +98,9 @@
                
             >{{item.text}}</v-list-item-title>
           </v-list-item>
-           <v-list-item
+        </div>
+           <div>
+            <v-list-item
                 v-for="(item, i) in items2"
                 :key="i"
                 :to="item.to"
@@ -108,6 +111,8 @@
             </v-list-item-icon>
             <v-list-item-title class="lista">{{item.text}}</v-list-item-title>
           </v-list-item>
+           </div>
+           
      </v-list-item-group>
     </v-list>
   </v-navigation-drawer>

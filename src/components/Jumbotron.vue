@@ -3,7 +3,7 @@
 
 
   <v-sheet
-    :height="$vuetify.breakpoint.smAndUp ? '100vh' : '100vh'"
+    :height="$vuetify.breakpoint.smAndUp ? '70vh' : '100vh'"
     color="primary"
     tile
   >
@@ -100,10 +100,10 @@
       titles: {
         inicio: {
           title: 'PROMUEVA SU PERFIL EMPRESARIAL CON UN DOMINIO .NI',
-          subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dolor scelerisque dui praesent ullamcorper.'
+          // subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dolor scelerisque dui praesent ullamcorper.'
         },
         quienessomos: {
-          title: 'Next Generation Development Today',
+          title: 'Nic.ni',
           // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
         },
         historia: {
@@ -129,7 +129,7 @@
         
         iniciarsesion: {
           title: 'Iniciar Sesión',
-          subtitle: 'Vestibulum turpis sem, aliquet eget, lobortis pellentesque.'
+          // subtitle: 'Vestibulum turpis sem, aliquet eget, lobortis pellentesque.'
         },
         contactenos: {
           title: 'Contáctenos'

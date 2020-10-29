@@ -84,7 +84,7 @@ export default {
   font-weight: 600 !important;
 }
 .v-main .img-top{
-margin-top: -90px;
+margin-top: -30px;
 }
 #paralax-front{
 margin-top: 60px;
