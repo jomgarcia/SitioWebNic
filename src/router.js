@@ -19,22 +19,22 @@ const router = new Router({
 
         },
         {
+            path: '/quienessomos',
+            name: 'quienessomos',
+            component: () =>
+                import ('@/views/QuienesSomos')
+        },
+        {
             path: '/historia',
-            name: 'Historia',
+            name: 'historia',
             component: () =>
                 import ('@/views/Historia')
         },
 
-        {
-            path: '/quienessomos',
-            name: 'somos',
-            component: () =>
-                import ('@/views/QuienesSomos')
-        },
 
         {
             path: '/misionvision',
-            name: 'misionvisio',
+            name: 'misionvision',
             component: () =>
                 import ('@/views/MisionVision')
         },

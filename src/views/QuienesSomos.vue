@@ -1,15 +1,10 @@
 <template>
-  <div id="quienessomos">
-    <h1>This is an about page</h1>
-  </div>
+  <section id="quienessomos">
+    <h1>Quienes Somos</h1>
+  </section>
 </template>
 <script>
 export default {
-   metaInfo: {
-      title: 'quienessomos',
-      meta: [
-        { name: 'description', content: 'Customized vue-cli templates for Vue and Vuetify' }
-      ]
-    },
+ 
 }
 </script>

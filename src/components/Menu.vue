@@ -47,13 +47,14 @@
       
       <v-list flat>
         <v-list-item
-          v-for="(link, index) in links" :key="index" router :to="link.route"
+          v-for="(item, index) in items1" 
+          :key="index"  
+          :to="item.to"
+          text
           class="bgsel"
-          
-
         >
-        <!-- <span v-text="link.text" /> -->
-          <v-list-item-title>{{ link.text }}</v-list-item-title>
+        <!-- <span v-text="item.text" /> -->
+          <v-list-item-title>{{ item.text }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
@@ -75,11 +76,13 @@
       <v-list flat>
         
         <v-list-item
-          v-for="(link, index) in links2" :key="index" router :to="link.route"
+          v-for="(item, index) in items2" 
+          :key="index"  
+          :to="item.to"
           class="bgsel"
         >
         <!-- <span v-text="link.text" /> -->
-          <v-list-item-title>{{ link.text }}</v-list-item-title>
+          <v-list-item-title>{{ item.text }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
@@ -124,18 +127,18 @@
   export default {
     data: () => ({
       isScrolling: false,
-      links: [
-        {text: 'Quienes Somos', route: '/QuienesSomos'},
-        {text: 'Historia', route: '/Historia'},
-        {text: 'Misión y Visión', route: '/MisionVision'},
-        {text: 'Valores', route: '/Valores'},
-      ],
-      links2: [
-        { text: 'WhoIs', route: '/WhoIs'},
-        { text: 'Buscar Dominio', route: '/BuscarDominio'},
-        { text: 'Información General', route: '/InformacionGeneral'},
-        { text: 'Requisitos', route: '/Requisitos'},
-      ]
+      // links: [
+      //   {text: 'Quienes Somos', route: '/QuienesSomos'},
+      //   {text: 'Historia', route: '/Historia'},
+      //   {text: 'Misión y Visión', route: '/MisionVision'},
+      //   {text: 'Valores', route: '/Valores'},
+      // ],
+      // links2: [
+      //   { text: 'WhoIs', route: '/WhoIs'},
+      //   { text: 'Buscar Dominio', route: '/BuscarDominio'},
+      //   { text: 'Información General', route: '/InformacionGeneral'},
+      //   { text: 'Requisitos', route: '/Requisitos'},
+      // ]
     }),
 
     computed: {
@@ -147,11 +150,51 @@
           },
         ]
       },
+      items1 (){
+        return[
+              {
+                'to': '/quienessomos',
+                'text': 'Quienes Somos'
+              },
+              {
+                'to': '/historia',
+                'text':'Historia'
+              },
+              {
+                'to':'/misionvision',
+                'text':'Misión Visión'
+              },
+              {
+                'to':'/valores',
+                'text':'Valores'
+              }
+        ]
+      },
+      items2 (){
+        return[
+              {
+                'to': '/whois',
+                'text':'WhoIs'
+              },
+              {
+                'to':'/buscardominio',
+                'text':'Buscar Dominio'
+              },
+              {
+                'to':'/informaciongeneral',
+                'text':'Información General'
+              },
+              {
+                'to':'/requisitos',
+                'text':'Requisitos'
+              }
+        ]
+      },
       items3 (){
         return [
-          {'to':'/contactenos',
-            'text':'Contáctenos'
-          },
+            {'to':'/contactenos',
+              'text':'Contáctenos'
+            },
           
         ]
       },

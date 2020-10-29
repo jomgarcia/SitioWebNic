@@ -40,7 +40,7 @@
        nav
         dense>
           <v-list-item
-          v-for="(item, i) in items"
+                v-for="(item, i) in items"
                 :key="i"
                 :to="item.to"
                 text
@@ -84,17 +84,29 @@
           </v-list-item>
       </v-list-group>
       <v-list-item-group>
-            <v-list-item>
+            <v-list-item
+                v-for="(item, i) in items1"
+                :key="i"
+                :to="item.to"
+                text
+            >
             <v-list-item-icon>
               <v-icon>mdi-contacts</v-icon>
             </v-list-item-icon>
-            <v-list-item-title class="lista">Contáctenos</v-list-item-title>
+            <v-list-item-title class="lista"
+               
+            >{{item.text}}</v-list-item-title>
           </v-list-item>
-           <v-list-item>
+           <v-list-item
+                v-for="(item, i) in items2"
+                :key="i"
+                :to="item.to"
+                text
+           >
             <v-list-item-icon>
               <v-icon>mdi-login</v-icon>
             </v-list-item-icon>
-            <v-list-item-title class="lista">Iniciar Sesión</v-list-item-title>
+            <v-list-item-title class="lista">{{item.text}}</v-list-item-title>
           </v-list-item>
      </v-list-item-group>
     </v-list>
@@ -126,6 +138,20 @@
             'text': 'Inicio'
             },
           ],
+        items1: 
+            [
+              {
+                'to':'/contactenos',
+                'text':'Contáctenos'
+              }
+            ],
+          items2:
+            [
+              {
+                'to':'/iniciarsesion',
+                'text':'Iniciar Sesión'
+              }
+            ]
 
       // items: [
       //   {

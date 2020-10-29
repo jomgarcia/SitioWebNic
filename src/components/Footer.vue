@@ -30,16 +30,12 @@
    
  <v-footer padless color="#101010">
     <v-container
-        max-height="48px" >
-                        
-                 <div class="text-center">
-                        
-                  <p class="pt-3">
+        max-height="48px" >      
+                 <div class="text-center">   
+                    <p class="pt-3">
                     ©<span id="año"></span> NIC.NI. Todos los Derechos Reservados. 
-                </p>
-                    
-                </div>
-                
+                    </p>  
+                </div>   
     </v-container>
   </v-footer>
 </template>

@@ -9,7 +9,7 @@
   >
     <v-img
       :key="image"
-      src="../assets/img/team.jpg"
+      :src="image"
       gradient="to top, rgba(32, 32, 30, .85), rgba(32, 32, 30, .60)"
       height="100%"
     >
@@ -38,11 +38,10 @@
           </v-row>
           
         </v-slide-x-transition>
-        <v-row>
-
+        <buscar-dominio/>
+        <!-- <v-row>
           <v-col cols="12 p-10">
             <v-form >
-              
                 <v-row no-gutters>
                       <v-col
                         cols="12"
@@ -58,9 +57,7 @@
                           filled
                         ></v-text-field>
                       </v-col>
-                    
                       <v-col
-
                         class="d-flex ml-1"
                         cols="12"
                         lg="3"
@@ -87,39 +84,61 @@
                 </v-row>
            </v-form>
       </v-col>
-        </v-row>
+        </v-row> -->
       </v-container>
-      
     </v-img>
-    
   </v-sheet>
   </div>
 </template>
 
 <script>
   export default {
+    components: {
+      BuscarDominio:()=> import ('@/components/BuscarDominio')
+    },
     data: () => ({
       titles: {
         inicio: {
           title: 'PROMUEVA SU PERFIL EMPRESARIAL CON UN DOMINIO .NI',
           subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dolor scelerisque dui praesent ullamcorper.'
         },
-        // quienessomos: {
-        //   title: 'Next Generation Development Today',
-        //   subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
-        // },
-        // masionvision: {
-        //   title: 'Premium Quality and Branding',
-        //   subtitle: 'Vestibulum turpis sem, aliquet eget, lobortis pellentesque.'
-        // },
-        // contactenos: {
-        //   title: 'Contact Alpha Construction',
-        //   subtitle: 'Aenean viverra rhoncus pede. Morbi mollis tellus ac sapien.'
-        // }
+        quienessomos: {
+          title: 'Next Generation Development Today',
+          // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
+        },
+        historia: {
+          title: 'Historia de Nic Nicaragua',
+          // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
+        },
+        misionvision: {
+          title: 'Mision y Visión',
+          // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
+        },
+        valores: {
+          title: 'Valores',
+          // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
+        },
+        whois: {
+          title: 'WhoIs',
+          // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
+        },
+        buscardominio: {
+          title: 'Buscar Dominio',
+          // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
+        },
+        
+        iniciarsesion: {
+          title: 'Iniciar Sesión',
+          subtitle: 'Vestibulum turpis sem, aliquet eget, lobortis pellentesque.'
+        },
+        contactenos: {
+          title: 'Contáctenos'
+        }
       },
       
-      loading: false,
-      items:['.ni','.com','.edu','.net']
+      
+      // loading: false,
+      // items:['.ni','.com','.edu','.net']
     }),
 
     computed: {
@@ -129,7 +148,7 @@
         return this.$route.name.toLowerCase()
       },
       image () {
-        return '/static/' + this.namespace + '-hero.png'
+        return '/static/' + this.namespace + '-team.jpg'
       },
       subtitle () {
         return this.titles[this.namespace].subtitle

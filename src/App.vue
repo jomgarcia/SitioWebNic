@@ -6,7 +6,6 @@
         <Vista />
         <MenuFooter />
         <Footer />
-
     </v-app>
 </template>
 <script>
