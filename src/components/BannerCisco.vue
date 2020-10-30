@@ -42,19 +42,19 @@
 </template>
 <style>
 #t-cisco{
-    font-size: 18px;
+    font-size: 26px !important;
     color: #ffffff;
-    padding: 10px;
+    padding: 45px !important;
 }
 @media ( max-width: 725px){
     .v-img{
        display: none !important;
     }
-   #t-cisco{
+   /* #t-cisco{
     font-size: 22px !important;
-    color: #ffffff;
+    color: #ffffff !important;
     padding: 10px !important;
     text-align: center;
-}
+} */
 }
 </style>

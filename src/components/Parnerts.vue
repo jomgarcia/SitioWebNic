@@ -173,7 +173,7 @@
 
                 <v-list-item-content>
                 <span
-                    class="text-uppercase font-weight-regular caption"  
+                    class="text-uppercase font-weight-regular caption" 
                 >www.uni.edu.ni</span>
 
                 <div>Universidad Nacional de Ingeniería</div>
