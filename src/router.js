@@ -75,6 +75,12 @@ const router = new Router({
                 import ('@/views/IniciarSesion')
         },
         {
+            path: '/crearusuario',
+            name: 'crearusuario',
+            component: () =>
+                import ('@/views/CrearUsuario')
+        },
+        {
             path: '/contactenos',
             name: 'contactenos',
             component: () =>

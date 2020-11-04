@@ -1,7 +1,7 @@
 <template>
 <div id="inicio">
 
-
+<bienvenido-nic class="img-top" />
   <v-img
   class="img-top"
     dark
@@ -64,9 +64,11 @@
 export default {
   // @ is an alias to /src
   components:{
+    
     BannerCisco: () => import ('@/components/BannerCisco'),
     CardPhone: () => import ('@/components/CardPhone'),
-    Parnerts: () => import ('@/components/Parnerts')
+    Parnerts: () => import ('@/components/Parnerts'),
+    BienvenidoNic: () => import ('@/components/BienvenidoNic')
   }
     
   }
@@ -84,7 +86,7 @@ export default {
   font-weight: 600 !important;
 }
 .v-main .img-top{
-margin-top: -30px;
+margin-top: 40px;
 }
 #paralax-front{
 margin-top: 60px;

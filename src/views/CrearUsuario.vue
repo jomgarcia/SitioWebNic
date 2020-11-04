@@ -21,32 +21,37 @@
           md="10"
           sm="10"
         >
-        <h3 class="white--text card-title mb-10">Iniciar Sesión</h3>
+        <h3 class="white--text card-title mb-5">Registrarse</h3>
           <v-text-field
-            label="Usuario"
+            label="Correo"
+            prepend-inner-icon="mdi-mail"
+          ></v-text-field>
+          <v-text-field
+            label="Nombre Usuario"
             prepend-inner-icon="mdi-account"
           ></v-text-field>
            <v-text-field
             label="Contaseña"
             prepend-inner-icon="mdi-lock"
           ></v-text-field>
+           <v-text-field
+            label="Confirmar Contaseña"
+            prepend-inner-icon="mdi-lock"
+          ></v-text-field>
           <v-checkbox v-model="checkbox">
             <template v-slot:label>
                 <div>
-               Recuerdame
+             <p> Al crear una cuenta, acepta los Términos, condiciones y la Política de privacidad de Nic.ni</p>
                 </div>
             </template>
             </v-checkbox>
-            <div class="text-center">
+            <div class="text-right">
                 <v-btn
-                class="rounded-pill text-capitalize"
+               class="rounded-pill text-capitalize"
                 >
-                 Iniciar Sesión
+                 crear cuenta
                 </v-btn>
             </div>
-            <router-link :to="{name: 'crearusuario'}" target="_blank"><p class="text-center mt-5">¿No tienes una cuenta? Crear cuenta</p></router-link>
-            <a href=""><p  class="text-center mt-2">Olvidó su contraseña?</p></a>
-            
         </v-col>
       </v-row>
     </v-container>
@@ -97,7 +102,7 @@ export default {
     margin-top: 15px !important;
 }
 .card-top{
-    top: 80px;
+    top: 20px;
     background: rgb(0, 56, 145, .63) !important;
 }
 .mdi-account:before {
@@ -106,6 +111,10 @@ export default {
 }
 .mdi-lock:before{
     content: "\F033E";
+    color: #fff;
+}
+.mdi-mail:before {
+    content: "\F0EBB";
     color: #fff;
 }
 .v-application a{

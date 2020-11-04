@@ -101,15 +101,14 @@
         </div>
            <div>
             <v-list-item
-                v-for="(item, i) in items2"
-                :key="i"
-                :to="item.to"
-                text
            >
             <v-list-item-icon>
               <v-icon>mdi-login</v-icon>
             </v-list-item-icon>
-            <v-list-item-title class="lista">{{item.text}}</v-list-item-title>
+            <!-- <v-list-item-title class="lista">
+              
+              </v-list-item-title> -->
+              <router-link :to="{name: 'iniciarsesion'}" target="_blank">Inisiar Sesión</router-link>
           </v-list-item>
            </div>
            

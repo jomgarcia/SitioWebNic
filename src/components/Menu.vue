@@ -1,6 +1,6 @@
 <template>
   <v-app-bar
-  height="90"
+  height="80"
     v-scroll="onScroll"
     :color="!isScrolling ? 'transparent' : 'rgba(28, 55, 146, .85)'"
     :hide-on-scroll="$vuetify.breakpoint.smAndDown"
@@ -9,10 +9,11 @@
     elevate-on-scroll
 
   >
+  
     <v-img
       alt="Nic"
       class="shrink"
-      max-width="20%"
+      max-width="115"
       src="/static/logoNic.png"
     />
     <v-spacer />
@@ -102,14 +103,13 @@
         <div class="mt-5">
 
       <v-btn
-        v-for="(item, i) in items4"
-        :key="i"
+        color="primary"
         :active-class="!isScrolling ? 'primary--text' : undefined"
-        :to="item.to"
-        text
+        outlined
       >
-        <span v-text="item.text" />
+      <router-link :to="{name: 'iniciarsesion'}" target="_blank">Iniciar Sesion</router-link>
       </v-btn>
+
         </div>
     </v-toolbar-items>
     <v-app-bar-nav-icon

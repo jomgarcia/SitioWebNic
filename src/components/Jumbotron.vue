@@ -107,11 +107,11 @@
           // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
         },
         historia: {
-          title: 'Historia de Nic Nicaragua',
+          title: 'Historia',
           // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
         },
         misionvision: {
-          title: 'Mision y Visión',
+          title: 'Misión - Visión',
           // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
         },
         valores: {
@@ -127,10 +127,9 @@
           // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
         },
         
-        iniciarsesion: {
-          title: 'Iniciar Sesión',
-          // subtitle: 'Vestibulum turpis sem, aliquet eget, lobortis pellentesque.'
-        },
+        // iniciarsesion: {
+        //   title: 'Iniciar Sesión',
+        // },
         contactenos: {
           title: 'Contáctenos'
         }
