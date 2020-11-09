@@ -53,8 +53,7 @@
   </v-form>
   </v-card>
 </v-img>
-  </section>
-  
+</section>
 </template>
 <script>
 export default {

@@ -62,31 +62,32 @@
         </div>
         <div class="mt-5">
 
-    <v-menu offset-y  open-on-hover  transition="slide-y-transition"
-          bottom>
-      <template v-slot:activator="{ on, attrs }" >
-       <v-btn
-          :active-class="!isScrolling ? 'primary--text' : undefined"
-          text
-          v-bind="attrs"
-          v-on="on"
-        >
-       Dominios
-        </v-btn>
-      </template>
-      <v-list flat>
-        
-        <v-list-item
-          v-for="(item, index) in items2" 
-          :key="index"  
-          :to="item.to"
-          class="bgsel"
-        >
-        <!-- <span v-text="link.text" /> -->
-          <v-list-item-title>{{ item.text }}</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-menu>
+      <v-menu offset-y  open-on-hover  transition="slide-y-transition"
+            bottom>
+        <template v-slot:activator="{ on, attrs }" >
+        <v-btn
+            :active-class="!isScrolling ? 'primary--text' : undefined"
+            text
+            v-bind="attrs"
+            v-on="on"
+          >
+        Dominios
+          </v-btn>
+        </template>
+        <v-list flat>
+          <v-list-item  class="bgsel">
+            <router-link :to="{name: 'whois'}" target="_blank" id="negro">WhoIs</router-link>
+          </v-list-item>
+          <v-list-item
+            v-for="(item, index) in items2" 
+            :key="index"  
+            :to="item.to"
+            class="bgsel"
+          >
+            <v-list-item-title>{{ item.text }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
         </div>
         <div class="mt-5">
 
@@ -172,10 +173,10 @@
       },
       items2 (){
         return[
-              {
-                'to': '/whois',
-                'text':'WhoIs'
-              },
+              // {
+              //   'to': '/whois',
+              //   'text':'WhoIs'
+              // },
               {
                 'to':'/buscardominio',
                 'text':'Buscar Dominio'
@@ -238,5 +239,9 @@
 }
 .v-text-field .fieldset, .v-text-field .v-input__control, .v-text-field .v-input__slot{
   border-radius: 0 !important;
+}
+#negro{
+  color: #000 !important;
+  text-decoration: none !important;
 }
 </style>

@@ -11,15 +11,18 @@
  
    <v-slide-x-transition appear>
     <v-row
-      align="top"
       justify="center"
     >
       <v-col
         class="text-center"
         cols="12"
       >
-        <h1 id="h1paralax" class="display-1 font-weight-thin mb-4">
-          VENTAJAS DE  TENER UN DOMINIO .NI
+        <h1 id="h1paralax" class="display-1 font-weight-thin mb-4"
+          v-for="(item,  i) in items"
+          :key="i"
+          text
+        >
+          {{item.text}}
         </h1>
       
       </v-col>
@@ -69,7 +72,15 @@ export default {
     CardPhone: () => import ('@/components/CardPhone'),
     Parnerts: () => import ('@/components/Parnerts'),
     BienvenidoNic: () => import ('@/components/BienvenidoNic')
-  }
+  },
+  data: () =>({
+
+    items: [
+      {
+        'text':' VENTAJAS DE  TENER UN DOMINIO .NI'
+      }
+    ]
+  })
     
   }
 </script>

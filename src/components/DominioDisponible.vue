@@ -9,14 +9,8 @@
                 flat
                 color="#EEEEEE"
                 >
-                <v-card-title class="display-1"
-                    v-for="(item, i) in items2"
-                    :key="('A' + i)"
-                >{{item.text}}</v-card-title>
-                <v-card-subtitle
-                v-for="(item, i) in items2"
-                    :key="('B' + i)"
-                >{{item.subtitle}}</v-card-subtitle>
+                <v-card-title class="display-1">¡El dominio se encuentra disponible!</v-card-title>
+                <v-card-subtitle>Aquierelo ahora y recibe todos nuestros grandiosos beneficios.</v-card-subtitle>
                 <v-divider class="mx-4"></v-divider>
                 <v-row>
                     <v-col cols="12"
@@ -66,12 +60,6 @@ export default {
           {
               'text':'dominio.com.ni', icon:'mdi-checkbox-marked-circle',
               'subtitle':'$50.00/año'
-          }
-      ],
-      items2: [
-          {
-              'text': '¡El dominio se encuentra disponible!',
-              'subtitle': 'Aquierelo ahora y recibe todos nuestros grandiosos beneficios.'
           }
       ]
     }),

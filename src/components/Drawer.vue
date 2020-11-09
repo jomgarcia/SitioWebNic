@@ -70,7 +70,7 @@
        <v-list-group
        no-action
         :value="true"
-        prepend-icon="mdi-earth"
+        prepend-icon="mdi-upload-network"
       >
         <template v-slot:activator>
           <v-list-item-title class="lista">Dominios</v-list-item-title>
@@ -83,6 +83,16 @@
                <v-list-item-title class="lista">{{ link.text }}</v-list-item-title>
           </v-list-item>
       </v-list-group>
+      <v-list-item
+           >
+            <v-list-item-icon>
+              <v-icon>mdi-earth</v-icon>
+            </v-list-item-icon>
+            <!-- <v-list-item-title class="lista">
+              
+              </v-list-item-title> -->
+              <router-link :to="{name: 'whois'}" target="_blank">WhoIs</router-link>
+          </v-list-item>
       <v-list-item-group>
         <div>
             <v-list-item
@@ -98,8 +108,9 @@
                
             >{{item.text}}</v-list-item-title>
           </v-list-item>
-        </div>
-           <div>
+        </div>     
+     </v-list-item-group>
+      <v-list-item-group>
             <v-list-item
            >
             <v-list-item-icon>
@@ -110,9 +121,7 @@
               </v-list-item-title> -->
               <router-link :to="{name: 'iniciarsesion'}" target="_blank">Inisiar Sesión</router-link>
           </v-list-item>
-           </div>
-           
-     </v-list-item-group>
+       </v-list-item-group>
     </v-list>
   </v-navigation-drawer>
 </template>
@@ -130,7 +139,7 @@
         {text: 'Valores', route: '/Valores'},
       ],
       links2: [
-        { text: 'WhoIs', route: '/WhoIs'},
+        // { text: 'WhoIs', route: '/WhoIs'},
         { text: 'Buscar Dominio', route: '/BuscarDominio'},
         { text: 'Información General', route: '/InformacionGeneral'},
         { text: 'Requisitos', route: '/Requisitos'},

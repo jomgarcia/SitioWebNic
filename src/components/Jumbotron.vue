@@ -118,18 +118,18 @@
           title: 'Valores',
           // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
         },
-        whois: {
-          title: 'WhoIs',
-          // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
-        },
         buscardominio: {
-          title: 'Buscar Dominio',
+          title: 'BuscarDominio',
+           subtitle: 'Consultar Dominio'
+        },
+        informaciongeneral: {
+          title: 'Información General',
           // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
         },
         
-        // iniciarsesion: {
-        //   title: 'Iniciar Sesión',
-        // },
+        requisitos: {
+          title: 'Requisitos',
+        },
         contactenos: {
           title: 'Contáctenos'
         }

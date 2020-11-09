@@ -39,7 +39,7 @@
                         color="#003791"
                         elevation="9"
                         large
-                      >Buscar
+                      ><router-link class="decoracion" :to="{name: 'buscardominio'}">Buscar</router-link>
                       </v-btn>
                     </v-col>  
                 </v-row>
@@ -56,8 +56,9 @@ export default {
         loading: false,
          items:['.ni','.com','.edu','.net']
         
-        }
-)}
+    })
+
+}
 </script>
 <style scoped>
 @media (max-width: 460px ) {
@@ -101,5 +102,8 @@ export default {
 .v-list-item__title {
   
     color: #000 !important;
+}
+.decoracion{
+  text-decoration: none !important;
 }
 </style>
