@@ -93,53 +93,103 @@
        </v-row>
            <v-simple-table>
             <template v-slot:default>
+               <thead>
                 <tr>
                 <th class="text-left">
                  Empresa
                 </th>
-                <td class="text-center"
-                     v-for="item in cliente"
-                    :key="item.name"
+                <th class="text-center"
                 >
-                {{item.name}}
-                </td>
+              Fecha de Expiración de Dominio
+                </th>
+                <th class="text-center"
+                >
+               Dirección de Empresa
+                </th>
                 </tr>
+               </thead>
+               <tbody>
+              <tr
+                v-for="item in datosempresa"
+                :key="item.nombre"
+              >
+                <td>{{ item.nombre }}</td>
+                <td class="text-center">{{ item.fecha }}</td>
+                <td class="text-center">{{ item.direccion }}</td>
+              </tr>
+            </tbody>
             </template>
         </v-simple-table>
-         <v-simple-table class="mt-2">
-            <template v-slot:default>
-                <tr>
-                <th class="text-left">
-                 Dirección de Empresa
-                </th>
-                <td class="text-center"
-                     v-for="item in cliente"
-                    :key="item.name"
+        <v-row>
+          <v-col cols="12"
+                    lg="12"
+                    v-model="items"
+                    v-for="(item, i) in items"
+                    :key="('A'+i)"
+           >
+            <h3 class="negrita mt-8">{{item.subtitle2}}</h3>
+           </v-col>
+        </v-row>
+         <v-simple-table>
+          <template v-slot:default>
+            <thead>
+              <tr>
+                <th class="text-left"
                 >
-                {{item.direccion}}
-                </td>
-                </tr>
-            </template>
+                Nombre
+                </th>
+                <th class="text-center"
+                >
+            Correo Electrónico
+                </th>
+                <th class="text-center"
+                >
+            Nivel de Dominio
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in datoscontacto"
+                :key="item.nombre"
+              >
+                <td >{{ item.nombre }}</td>
+                <td class="text-center">{{ item.correo }}</td>
+                <td class="text-center">{{ item.nivel }}</td>
+              </tr>
+            </tbody>
+          </template>
         </v-simple-table>
         </v-container>
 </section>
   
 </template>
 <script>
+// import axios from 'axios';
+
 export default {
     data: () =>({
         items:[
             {
                 'text':'Resultado de la búsqueda WhoIs',
-                'subtitle':'bac.ni'
+                'subtitle':'Datos de Empresa',
+                'subtitle2':'Información de Contacto'
             }
         ],
-         cliente: [
-          {
-            name: 'Banco de America Central S.A.',
-            direccion:'Km 4.5 carretera masaya centro BAC'
-          },
 
+        datosempresa:[
+          {
+              nombre:'Banco de America Central S.A.',
+              fecha: '5/10/2021',
+              direccion: '	Km 4.5 carretera masaya centro BAC'
+          }
+        ],
+        datoscontacto:[
+            {
+              nombre:'Alvaro Lacayo',
+              correo:'contadorgeneral@generifar.com.ni',
+              nivel:'Tercer'
+            }
         ],
         loading: false,
          items2:['.ni','.com','.edu','.net']

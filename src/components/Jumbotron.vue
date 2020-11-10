@@ -132,6 +132,9 @@
         },
         contactenos: {
           title: 'Contáctenos'
+        },
+        faqs: {
+          title: 'Faqs'
         }
       },
       

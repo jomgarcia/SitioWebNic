@@ -83,8 +83,8 @@
                         <v-list-item-title class="lista"><router-link to="/Historia">Nuestra Historia</router-link></v-list-item-title>
                         <v-list-item-title class="lista pt-3"><router-link to="/MisionVision">Misión y Visión</router-link></v-list-item-title>
                         <v-list-item-title class="lista pt-3"><router-link to="/Valores">Valores</router-link></v-list-item-title>
-                        <v-list-item-title class="lista pt-3"><router-link to="">Consulta disponibilidad de dominios</router-link></v-list-item-title>
-                        <v-list-item-title class="lista pt-3"><router-link to="">FAQs</router-link></v-list-item-title>
+                        <v-list-item-title class="lista pt-3"><router-link to="/BuscarDominio">Consulta disponibilidad de dominios</router-link></v-list-item-title>
+                        <v-list-item-title class="lista pt-3"><router-link to="/Faqs">FAQs</router-link></v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
         </v-card>

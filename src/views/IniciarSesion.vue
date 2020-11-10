@@ -25,6 +25,10 @@
           <v-text-field
             label="Usuario"
             prepend-inner-icon="mdi-account"
+           v-model="email"
+            :rules="emailRules"
+          
+            required
           ></v-text-field>
            <v-text-field
             label="Contaseña"
@@ -63,16 +67,16 @@ export default {
       selection: 1,
 
        valid: false,
-      firstname: '',
+      nombre: '',
       lastname: '',
       nameRules: [
-        v => !!v || 'Name is required',
-        v => v.length <= 10 || 'Name must be less than 10 characters',
+        v => !!v || 'Nombre es requerido',
+        // v => v.length <= 10 || 'El nombre debe tener menos de 10 caracteres',
       ],
       email: '',
       emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+/.test(v) || 'E-mail must be valid',
+        v => !!v || 'Correo es requerido',
+        v => /.+@.+/.test(v) || 'Correo debe ser valido',
       ],
     }),
 
