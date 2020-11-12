@@ -205,7 +205,7 @@
     color: #fff;
 }
  .theme--light.v-input input, .theme--light.v-input textarea{
-   color: #fff !important;
+   color: #000 !important;
   
  }
  .theme--light.v-select .v-select__selection--comma {

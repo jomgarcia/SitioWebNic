@@ -1,6 +1,6 @@
 <template>
   <v-app-bar
-  height="80"
+  height="70"
     v-scroll="onScroll"
     :color="!isScrolling ? 'transparent' : 'rgba(28, 55, 146, .85)'"
     :hide-on-scroll="$vuetify.breakpoint.smAndDown"
