@@ -2,6 +2,8 @@
 <div id="inicio">
 
 <bienvenido-nic class="img-top" />
+
+
   <v-img
   class="img-top"
     dark
@@ -56,14 +58,17 @@
       </v-col>
     </v-row>
  
-  </v-img>  
- 
+  </v-img>
+  <section class="noticia">
+    <noticia-nic />
+  </section>  
 <banner-cisco class="cisco"/>
  <card-phone class="phone"/> 
  <parnerts/>
   </div>
 </template>
 <script>
+
 export default {
   // @ is an alias to /src
   components:{
@@ -71,7 +76,8 @@ export default {
     BannerCisco: () => import ('@/components/BannerCisco'),
     CardPhone: () => import ('@/components/CardPhone'),
     Parnerts: () => import ('@/components/Parnerts'),
-    BienvenidoNic: () => import ('@/components/BienvenidoNic')
+    BienvenidoNic: () => import ('@/components/BienvenidoNic'),
+    NoticiaNic: () => import ('@/components/NoticiaNic')
   },
   data: () =>({
 

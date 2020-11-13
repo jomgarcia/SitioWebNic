@@ -3,7 +3,7 @@
 
 
   <v-sheet
-    :height="$vuetify.breakpoint.smAndUp ? '70vh' : '100vh'"
+    :height="$vuetify.breakpoint.smAndUp ? '80vh' : '100vh'"
     color="primary"
     tile
   >

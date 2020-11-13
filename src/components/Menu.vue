@@ -57,11 +57,17 @@
         <!-- <span v-text="item.text" /> -->
           <v-list-item-title>{{ item.text }}</v-list-item-title>
         </v-list-item>
-      </v-list>
+      </v-list>   
     </v-menu>
-        </div>
+      <v-btn
+        :active-class="!isScrolling ? 'primary--text' : undefined"
+        class="bgsel"
+        text
+      >
+       <router-link class="white--text" :to="{name: 'whois'}" target="_blank">WhoIs</router-link>
+      </v-btn>
+      </div>
         <div class="mt-5">
-
       <v-menu offset-y  open-on-hover  transition="slide-y-transition"
             bottom>
         <template v-slot:activator="{ on, attrs }" >
@@ -75,9 +81,9 @@
           </v-btn>
         </template>
         <v-list flat>
-          <v-list-item  class="bgsel">
-            <router-link :to="{name: 'whois'}" target="_blank" id="negro">WhoIs</router-link>
-          </v-list-item>
+          <!-- <v-list-item  class="bgsel">
+           
+          </v-list-item> -->
           <v-list-item
             v-for="(item, index) in items2" 
             :key="index"  
@@ -106,7 +112,7 @@
       <v-btn
         color="primary"
         :active-class="!isScrolling ? 'primary--text' : undefined"
-        outlined
+        text
       >
       <router-link :to="{name: 'iniciarsesion'}" target="_blank">Iniciar Sesion</router-link>
       </v-btn>

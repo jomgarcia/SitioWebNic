@@ -210,7 +210,7 @@
                     <v-list-item-content>
                     <span
                         class="text-uppercase font-weight-regular caption"  
-                    >WWW.lactld.org/</span>
+                    >WWW.lactld.org</span>
 
                     <div>LACTLD</div>
                     </v-list-item-content>
@@ -248,7 +248,7 @@
                 <v-list-item-content>
                 <span
                     class="text-uppercase font-weight-regular caption"  
-                >www.icann.org/</span>
+                >www.icann.org</span>
 
                 <div>ICANN</div>
                 </v-list-item-content>
@@ -297,7 +297,7 @@
             lg="6"
             md="6"
             sm="12"
-        >
+            >
             <v-card
                     flat
                     class="mx-auto mt-4"
@@ -323,6 +323,42 @@
                         >www.lacnic.net</span>
 
                         <div>LACNIC</div>
+                        </v-list-item-content>
+                    </v-list-item>
+                    </v-list>
+            </v-card>
+          </v-col>
+           <v-col
+            cols="12"
+            lg="6"
+            md="6"
+            sm="12"
+            >
+            <v-card
+                    flat
+                    class="mx-auto mt-4"
+                    max-width="450"
+                    >
+
+                    <v-card-text class="py-0">
+                    </v-card-text>
+                    <v-list three-line>
+                    <v-list-item
+                        ripple  
+                    >
+                        <v-img
+                        src="../assets/img/internet-society-isoc.png"
+                        class="mr-4"
+                        max-width="125"
+                        min-width="64"
+                        ></v-img>
+
+                        <v-list-item-content>
+                       <span
+                            class="text-uppercase font-weight-regular caption"  
+                        >www.isoc.org.ni</span>
+
+                        <div> Internet Society</div>
                         </v-list-item-content>
                     </v-list-item>
                     </v-list>
