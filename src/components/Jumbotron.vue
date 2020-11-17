@@ -126,6 +126,11 @@
           title: 'Información General',
           // subtitle: 'Phasellus gravida semper nisi. Fusce convallis metus id felis luctus adipiscing.'
         },
+           cursocisco: {
+          title: 'Cursos Cisco',
+           subtitle: 'Ofrecemos a nuestros clientes capacitaciones gratuitas de CISCO.'
+        },
+        
         
         requisitos: {
           title: 'Requisitos',

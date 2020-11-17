@@ -7,7 +7,7 @@
   export default {
     metaInfo () {
       return {
-        titleTemplate: '%s — Nic'
+        titleTemplate: '%s Nic.Ni'
       }
     },
 

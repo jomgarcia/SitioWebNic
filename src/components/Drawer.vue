@@ -119,7 +119,7 @@
             <!-- <v-list-item-title class="lista">
               
               </v-list-item-title> -->
-              <router-link :to="{name: 'iniciarsesion'}" target="_blank">Inisiar Sesión</router-link>
+              <router-link :to="{name: 'iniciarsesion'}" target="_blank">Iniciar Sesión</router-link>
           </v-list-item>
        </v-list-item-group>
     </v-list>
@@ -158,13 +158,13 @@
                 'text':'Contáctenos'
               }
             ],
-          items2:
-            [
-              {
-                'to':'/iniciarsesion',
-                'text':'Iniciar Sesión'
-              }
-            ]
+          // items2:
+          //   [
+          //     {
+          //       'to':'/iniciarsesion',
+          //       'text':'Iniciar Sesión'
+          //     }
+          //   ]
 
       // items: [
       //   {

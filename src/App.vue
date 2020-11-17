@@ -11,7 +11,7 @@
 <script>
 export default {
      metaInfo: {
-      titleTemplate: '%s — Nic'
+      titleTemplate: '%s Nic.Ni'
     },
 
     components: {

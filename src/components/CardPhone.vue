@@ -52,8 +52,21 @@
         <v-divider></v-divider>
 
         <v-card-text>
-          TODOS NUESTROS CLIENTES RECIBEN CAPACITACIONES GRATUITAS DE CISCO
+         OFRECEMOS A NUESTROS CLIENTES CAPACITACIONES GRATUITAS DE CISCO
         </v-card-text>
+        <router-link :to="{name: 'cursocisco'}">
+         <v-chip
+              class="ma-2"
+              color="#567CC6"
+              label
+              text-color="white"
+            >
+              <v-icon left>
+                mdi-arrow-right-thick
+              </v-icon>
+             Ver
+            </v-chip>
+            </router-link>
       </div>
     </v-expand-transition>
   </v-card>

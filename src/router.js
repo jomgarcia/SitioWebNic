@@ -91,6 +91,12 @@ const router = new Router({
             name: 'faqs',
             component: () =>
                 import ('@/views/Faqs')
+        },
+        {
+            path: '/cursocisco',
+            name: 'cursocisco',
+            component: () =>
+                import ('@/views/CursoCisco')
         }
 
     ]

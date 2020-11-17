@@ -71,7 +71,7 @@
                class="mt-5"
                  hide-default-header
                  hide-default-footer
-                 dense
+                
                >
               <template v-slot:default> 
                 <tbody>
@@ -108,18 +108,18 @@ export default {
             titulo: 'Nuestro correo electrónico',
             info: 'info@nic.ni',
           },
-          {
-            titulo: 'Cobranza',
-            info: 'cobranza@nic.ni',
-          },
-          {
-            titulo: 'Área Técnica',
-            info: 'tech@nic.ni',
-          },
-          {
-            titulo: 'Administración',
-            info: 'admni@nic.ni',
-          },
+          // {
+          //   titulo: 'Cobranza',
+          //   info: 'cobranza@nic.ni',
+          // },
+          // {
+          //   titulo: 'Área Técnica',
+          //   info: 'tech@nic.ni',
+          // },
+          // {
+          //   titulo: 'Administración',
+          //   info: 'admni@nic.ni',
+          // },
         ],
 
         checkbox: false,

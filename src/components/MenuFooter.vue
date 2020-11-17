@@ -211,7 +211,7 @@
 
                     <v-list-item-content>
                     <v-list-item-title class="lista">Dirección</v-list-item-title>
-                    <v-list-item-action-text class="lista2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et a facilisis orci viverra. Bibendum tristique varius.</v-list-item-action-text>
+                    <v-list-item-action-text class="lista2">Universidad Nacional de Ingeniería, Recinto Universitario Simón Bolivar.  Edificio Rigoberto López</v-list-item-action-text>
                     </v-list-item-content>
                 </v-list-item>
                 <v-divider inset></v-divider>
@@ -225,7 +225,7 @@
 
                     <v-list-item-content>
                     <v-list-item-title class="lista">¿Alguna pregunta?</v-list-item-title>
-                    <v-list-item-subtitle class="lista2">ventas@nic.ni</v-list-item-subtitle>
+                    <v-list-item-subtitle class="lista2">info@nic.ni</v-list-item-subtitle>
                     </v-list-item-content>
                 </v-list-item>
                 <v-divider inset></v-divider>
@@ -239,7 +239,7 @@
 
                     <v-list-item-content>
                     <v-list-item-title class="lista">Llámenos o escríbanos</v-list-item-title>
-                    <v-list-item-subtitle class="lista2">(505) 2222 2222 (505) 8888 8888</v-list-item-subtitle>
+                    <v-list-item-subtitle class="lista2">(505) 2270-0958 - (505) 2270-0958</v-list-item-subtitle>
                     </v-list-item-content>
                 </v-list-item>
             </v-list>
