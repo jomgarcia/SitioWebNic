@@ -264,7 +264,7 @@ export default {
     color: #9E9E9E !important;
 }
 .border{
-    border-left: 2px solid #398BF7;
+    border-left: 2px solid #17A2B8;
 }
 .lista{
     color: #fff !important;

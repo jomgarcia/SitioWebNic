@@ -133,7 +133,7 @@
             </v-col>
     </v-row>
   </v-container>  -->
-<v-container>
+<v-container fluid>
     <v-row>
             <v-col cols="12"
                     lg="12"
@@ -374,6 +374,16 @@
      class="display-5 text-uppercase text-center"
     >AYUDANDO AL DESARROLLO DEL INTERNET DE NICARAGUA 
     DESDE 1988</h4>
+    </v-col>
+    <v-col cols="12">
+        <!-- <v-parallax src="../assets/img/coronavirus_spanish.jpg">
+        </v-parallax> -->
+        <v-img
+              lazy-src="../assets/img/coronavirus_spanish.jpg"
+              max-height="800"
+              max-width="1400"
+              src="../assets/img/coronavirus_spanish.jpg"
+          ></v-img>
     </v-col>
     </v-row>
 </v-container>
