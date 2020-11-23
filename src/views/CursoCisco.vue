@@ -12,11 +12,13 @@
                     :key="i"
                     :cols="cursos.flex"
                >
+                 <v-hover v-slot="{ hover }">
                     <v-card
                     class="mx-auto mt-4 mb-4"
                     max-width="344"
                     tile
-                    elevation="2"
+                  :elevation="hover ? 12 : 2"
+                    :class="{ 'on-hover': hover }"
                   
                 >
                     <v-img
@@ -35,6 +37,7 @@
                     <v-card-actions>
                     <v-btn
                         color="#003791"
+                        :class="{ 'show-btns': hover }"
                     >
                        <a v-bind:href="curso.url" target="_blank" class="deco">Más</a>
                     </v-btn>
@@ -42,6 +45,7 @@
                     <v-spacer></v-spacer>
                     </v-card-actions>
                     </v-card>
+                    </v-hover>
                </v-col>
            </v-row>
        </v-container>
@@ -92,5 +96,14 @@ export default {
 }
 .deco{
     text-decoration: none !important;
+}
+.v-card:not(.on-hover) {
+  opacity: 0.6;
+ }
+ .show-btns {
+  color: rgba(255, 255, 255, 1) !important;
+}
+.v-card {
+  transition: opacity .5s ease-in-out;
 }
 </style>

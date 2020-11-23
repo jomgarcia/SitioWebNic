@@ -62,7 +62,7 @@
         </v-row>
       </v-sheet>
     </v-expand-transition> -->
- <v-slide-group
+ <!-- <v-slide-group
       v-model="model"
       class="pa-4"
       active-class="blue darken-1"
@@ -96,7 +96,37 @@
           </v-row>
         </v-card>
       </v-slide-item>
-    </v-slide-group>  
+    </v-slide-group>   -->
+ <v-carousel
+   
+    cycle
+    height="400"
+    hide-delimiter-background
+    show-arrows-on-hover
+>
+    <v-carousel-item
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
+      v-bind:href="item.url"
+      reverse-transition="fade-transition"
+      transition="fade-transition"
+      text
+    >
+        <v-row
+          class="fill-height"
+          align="center"
+          justify="center"
+        >
+        <v-col cols="12" lg="12" md="12">
+          <h1 class="back py-4 pa-2">
+          {{item.text}}
+          </h1>
+        </v-col>
+         
+        </v-row>
+    </v-carousel-item>
+</v-carousel> 
   </v-sheet> 
 
  <!-- <v-carousel
@@ -154,15 +184,17 @@ export default {
         items: [
           {
             src:require('../assets/img/4.jpg'),
+            text:'¿Que es y como funciona internet de las cosas?',
+            url:'https://www.nic.ni/noticias/noticia/1041'
           },
           {
             src:require('../assets/img/5.jpg'),
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+            src:require('../assets/img/6.jpg'),
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+            src:require('../assets/img/7.jpg'),
           },
         ],
       }
@@ -177,5 +209,17 @@ export default {
 .mdi-chevron-left{
   color: #003791 !important;
     font-size: 48px !important;
+}
+.back{
+  font-size: 28px;
+  margin-top: 300px;
+  height: 100px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.51); ;
+}
+@media (max-width: 725px){
+        .back{
+          display: none;
+        }
 }
 </style>

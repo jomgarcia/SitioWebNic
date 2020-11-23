@@ -23,6 +23,13 @@
                         {{item.resp}}
                     </v-expansion-panel-content>
                     </v-expansion-panel>
+                    <v-expansion-panel>
+                            <v-expansion-panel-header>¿Donde Registrar un Cuenta de Usuario?</v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                        para crear una cuenta de usuario click<router-link :to="{name: 'crearusuario'}" target="_blank"> <span class="texto-negro">aquí</span></router-link>
+                    </v-expansion-panel-content>
+                    </v-expansion-panel>
+                     
                 </v-expansion-panels>
                 </template>
              </v-col>
@@ -95,13 +102,18 @@ export default {
                     pregunta:'¿Como Realizar un cambio de DNS?',
                     resp:''
                 },
-                {
-                    pregunta:'¿Como Realizar un cambio de DNS?',
-                    resp:''
-                }
 
             ],
         }
     }
 }
 </script>
+<style>
+.texto-negro{
+    color: #000 !important;
+    padding-left: 2px;
+}
+.texto-negro:hover{
+    color: red !important;
+}
+</style>

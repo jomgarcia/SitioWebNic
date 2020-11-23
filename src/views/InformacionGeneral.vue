@@ -436,6 +436,60 @@
                    class="imagen2"
                    ></v-img>
                </v-col>
+               <v-col cols="12">
+                    <div class="text-center">
+                        <v-dialog
+                        v-model="dialog2"
+                        width="500"
+                        >
+                        <template v-slot:activator="{ on, attrs }">
+                            <v-btn
+                            class="mt-4"
+                            color="indigo darken-3"
+                            dark
+                            v-bind="attrs"
+                            v-on="on"
+                            outlined
+                            >
+                            Requisitos para Registrar un Dominio
+                            </v-btn>
+                        </template>
+
+                        <v-card>
+                            <v-card-title class="indigo darken-3 white--text" >
+                           Requisitos para Registrar un Dominio
+                            </v-card-title>
+                          <v-card-text>
+                          <v-list dense
+                           v-for="(requisito, i) in requisitos"
+                            :key="'J' + i"
+                          >
+                                <v-list-item
+                                >
+                                <v-list-item-icon>
+                                    <v-icon color="green" v-text="requisito.icon"></v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                    <v-list-item-action-text class="texto-negro" v-text="requisito.text"></v-list-item-action-text>
+                                </v-list-item-content>
+                                </v-list-item>              
+                            </v-list>
+                            </v-card-text>
+                            <v-divider></v-divider>
+                            <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn
+                                color="indigo darken-3"
+                                text
+                                @click="dialog2 = false"
+                            >
+                                Cerrar
+                            </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                        </v-dialog>
+                    </div>
+               </v-col>
            </v-row>
        </v-container>
    </section>
@@ -445,6 +499,7 @@ export default {
     data (){
         return {
             dialog:false,
+            dialog2: false,
             e1: 1,
             dominios:[
                 {
@@ -551,6 +606,13 @@ export default {
                         src:require('../assets/img/charman3.png')
 
                     }
+            ],
+            requisitos:[
+                        { text:'Ser Mayor de Edad', icon: 'mdi-checkbox-marked-circle'},
+                        { text:'Que el Dominio que desea Registrar esté Disponible', icon:'mdi-checkbox-marked-circle'},
+                        { text:'Tener una cuenta de usuario', icon:'mdi-checkbox-marked-circle'},
+                        { text:'Tener una cuenta de correo electrónico', icon:'mdi-checkbox-marked-circle'},
+                        { text:'Realizar el pago correspondiente', icon:'mdi-checkbox-marked-circle'}
             ],
             dominisoNi:[
                 {

@@ -191,10 +191,10 @@
                 'to':'/informaciongeneral',
                 'text':'Información General'
               },
-              {
-                'to':'/requisitos',
-                'text':'Requisitos'
-              }
+              // {
+              //   'to':'/requisitos',
+              //   'text':'Requisitos'
+              // }
         ]
       },
       items3 (){

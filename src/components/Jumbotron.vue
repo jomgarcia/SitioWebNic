@@ -132,9 +132,9 @@
         },
         
         
-        requisitos: {
-          title: 'Requisitos',
-        },
+        // requisitos: {
+        //   title: 'Requisitos',
+        // },
         contactenos: {
           title: 'Contáctenos'
         },

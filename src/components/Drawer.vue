@@ -142,7 +142,7 @@
         // { text: 'WhoIs', route: '/WhoIs'},
         { text: 'Buscar Dominio', route: '/BuscarDominio'},
         { text: 'Información General', route: '/InformacionGeneral'},
-        { text: 'Requisitos', route: '/Requisitos'},
+        // { text: 'Requisitos', route: '/Requisitos'},
       ],
        items: 
           [
