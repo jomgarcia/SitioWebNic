@@ -14,7 +14,7 @@
                >
                  <v-hover v-slot="{ hover }">
                     <v-card
-                    class="mx-auto mt-4 mb-4"
+                    class="mx-auto mt-4 mb-4 card"
                     max-width="344"
                     tile
                   :elevation="hover ? 12 : 2"
@@ -97,13 +97,13 @@ export default {
 .deco{
     text-decoration: none !important;
 }
-.v-card:not(.on-hover) {
-  opacity: 0.6;
+.card:not(.on-hover) {
+  opacity: 0.7;
  }
  .show-btns {
   color: rgba(255, 255, 255, 1) !important;
 }
-.v-card {
+.card {
   transition: opacity .5s ease-in-out;
 }
 </style>
