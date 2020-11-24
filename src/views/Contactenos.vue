@@ -9,9 +9,9 @@
                 md="12"
               >
               <h1 class="display-1">Formulario de Contacto</h1>
-                <v-card-subtitle>Campos marcados con * son requeridos</v-card-subtitle>
+                <v-card-subtitle>Los campos marcados con <span class="rojo">*</span> son obligatorios</v-card-subtitle>
 
-               <v-card-subtitle>Nombres *</v-card-subtitle>
+               <v-card-subtitle>Nombres <span class="rojo">*</span></v-card-subtitle>
                <v-text-field
                color="indigo darken-4"
                v-model="nombre"
@@ -21,7 +21,7 @@
                 required
                 :rules="nameRules"
             ></v-text-field>
-            <v-card-subtitle>Apellidos *</v-card-subtitle>
+            <v-card-subtitle>Apellidos <span class="rojo">*</span></v-card-subtitle>
             <v-text-field
                color="indigo darken-4"
                v-model="apellido"
@@ -30,7 +30,7 @@
                 required
                 :rules="apellidoRules"
             ></v-text-field>
-            <v-card-subtitle>Correo *</v-card-subtitle>
+            <v-card-subtitle>Correo <span class="rojo">*</span></v-card-subtitle>
             <v-text-field
                color="indigo darken-4"
                v-model="email"
@@ -39,7 +39,7 @@
                 required
                 :rules="emailRules"
             ></v-text-field>
-            <v-card-subtitle>Mensaje *</v-card-subtitle>
+            <v-card-subtitle>Mensaje <span class="rojo">*</span></v-card-subtitle>
              <v-textarea
                 v-model="mensaje"
                 :rules="mensajeRules"
@@ -48,6 +48,9 @@
                 filled
                 auto-grow
              ></v-textarea>
+               <vue-recaptcha ref="recaptcha"
+                @verify="onVerify" sitekey="6LcAsOsZAAAAAO3CMeVwQpSPxpYozx72WgFu9XKu">
+              </vue-recaptcha>
              <v-btn
                  color="blue darken-4"
                 class="text-capitalize white--text"
@@ -108,18 +111,6 @@ export default {
             titulo: 'Nuestro correo electrónico',
             info: 'info@nic.ni',
           },
-          // {
-          //   titulo: 'Cobranza',
-          //   info: 'cobranza@nic.ni',
-          // },
-          // {
-          //   titulo: 'Área Técnica',
-          //   info: 'tech@nic.ni',
-          // },
-          // {
-          //   titulo: 'Administración',
-          //   info: 'admni@nic.ni',
-          // },
         ],
 
         checkbox: false,
@@ -195,7 +186,10 @@ export default {
 }
 </script>
 <style>
-
+.rojo{
+  color: red;
+  font-size: 16px;
+}
 .mdi-close::before {
     content: "\F0156";
     color: #000;

@@ -9,13 +9,13 @@
     elevate-on-scroll
 
   >
-  
-    <v-img
+   <v-img
       alt="Nic"
       class="shrink"
       max-width="115"
       src="/static/logoNic.png"
     />
+   
     <v-spacer />
     <v-toolbar-items v-if="$vuetify.breakpoint.mdAndUp">
       <div class="mt-5">

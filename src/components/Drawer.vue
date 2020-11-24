@@ -10,11 +10,13 @@
       align="center"
       class="ma-0 pa-3 flex-no-wrap"
     >
+    
       <v-img
         contain
         src="/static/logoNic.png"
         width="50"
       />
+   
       <v-btn
         aria-label="Close"
         class="ml-4"

@@ -7,7 +7,7 @@
   <v-img
   class="img-top"
     dark
-    height="700"
+    height="600"
     src="../assets/img/datacenter.jpg"
   >
  
@@ -46,18 +46,23 @@
         lg="6"
         offset-lg="0"
       >
-      <div id="paralax-front">
-        <p class="text-left">Proteges tu nombre personal o el de tu empresa y obtienes un identificador fácil de recordar para utilizarlo en Internet.</p>
-        <p class="text-left">Tu nombre o el de tu empresa en Internet se relacionará directamente con Nicaragua.
-      </p>
-      <p class="text-left">
-        Podrás utilizarlo para tener presencia en Internet y promocionarte o promocionar a tu empresa a nivel mundial, ya que al tener una página en Internet, tu página se puede accesar desde cualquier parte del mundo. Ejemplo: www.nombredemiempresa.com.ni
-      </p>
-      <p class="text-left">Podrás utilizarlo para tus direcciones de correo electrónico.</p>
+      <div id="parallax-front">
+        <v-list color="transparent" 
+            v-for="(requisito, i) in requisitos"
+           :key="'J' + i"
+            >
+            <v-list-item>
+                <v-list-item-icon>
+                    <v-icon color="green" v-text="requisito.icon"></v-icon>
+                </v-list-item-icon>
+                <v-list-item-content>
+                    <v-list-item-action-text class="parallax-front"  v-text="requisito.text"></v-list-item-action-text>
+                 </v-list-item-content>
+             </v-list-item>              
+           </v-list>
       </div>
       </v-col>
     </v-row>
- 
   </v-img>
   <section class="noticia">
     <noticia-nic />
@@ -85,7 +90,14 @@ export default {
       {
         'text':' VENTAJAS DE  TENER UN DOMINIO .NI'
       }
-    ]
+    ],
+     requisitos:[
+                        { text:'Proteges tu nombre personal o el de tu empresa y obtienes un identificador fácil de recordar para utilizarlo en Internet.', icon: 'mdi-checkbox-marked-circle'},
+                        { text:'Tu nombre o el de tu empresa en Internet se relacionará directamente con Nicaragua.', icon:'mdi-checkbox-marked-circle'},
+                        { text:' Podrás utilizarlo para tener presencia en Internet y promocionarte o promocionar a tu empresa a nivel mundial, ya que al tener una página en Internet, tu página se puede accesar desde cualquier parte del mundo. Ejemplo: www.nombredemiempresa.com.ni', icon:'mdi-checkbox-marked-circle'},
+                        { text:'Podrás utilizarlo para tus direcciones de correo electrónico.', icon:'mdi-checkbox-marked-circle'},
+                       
+            ],
   })
     
   }
@@ -105,9 +117,13 @@ export default {
 .v-main .img-top{
 margin-top: 40px;
 }
-#paralax-front{
+#parallax-front{
 margin-top: 60px;
-font-size: 22px;
+
+
+}
+.parallax-front{
+  font-size: 16px !important;
 }
 .v-application p {
   padding: 10px;
@@ -119,6 +135,13 @@ font-size: 22px;
     padding:10px;
  
 }
+#parallax-front{
+margin-top: -20px;
+}
+.h1paralax{
+  margin-top: 10px;
+}
+
 .cisco{
   display: none !important;
 }
@@ -127,6 +150,9 @@ font-size: 22px;
   .phone{
     display: none !important;
     
+  }
+  .parallax-front{
+    font-size: 14px !important;
   }
 }
 </style>

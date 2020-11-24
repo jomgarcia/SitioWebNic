@@ -380,8 +380,7 @@
         </v-parallax> -->
         <v-img
               lazy-src="../assets/img/coronavirus_spanish.jpg"
-              max-height="800"
-              max-width="1400"
+             
               src="../assets/img/coronavirus_spanish.jpg"
           ></v-img>
     </v-col>

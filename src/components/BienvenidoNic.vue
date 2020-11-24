@@ -25,7 +25,7 @@
                     tile
                     >Ver más</v-btn> -->
                     <v-btn
-                        class="mt-2 mb-15"
+                        class="mt-2 mb-15 top"
                         color="#003791"
                         elevation="3"
                         large
@@ -76,7 +76,7 @@ export default {
         font-size: 28px !important;
     }
     .centro{
-        align-content: center !important;
+        display: none !important;
     }
     
 }
