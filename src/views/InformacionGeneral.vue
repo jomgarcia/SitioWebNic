@@ -1,4 +1,6 @@
 <template>
+<div>
+    <vue-headful :title="title"/>
    <section>
        <v-container>
            <v-row>
@@ -493,11 +495,17 @@
            </v-row>
        </v-container>
    </section>
+   </div>
 </template>
 <script>
+import vueHeadful from 'vue-headful';
 export default {
+    components:{
+        vueHeadful
+    },
     data (){
         return {
+            title:'Información General',
             dialog:false,
             dialog2: false,
             e1: 1,

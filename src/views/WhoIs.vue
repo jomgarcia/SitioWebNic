@@ -1,4 +1,6 @@
 <template>
+<div>
+<vue-headful :title="title"/>
  <section>
       <v-img
       class="fullwith"
@@ -24,8 +26,8 @@
                 </h1>
               </v-col>
                  <v-col cols="12 p-10">
-            <v-form >
-                <v-row no-gutters>
+                <v-form >
+                  <v-row no-gutters>
                       <v-col
                         cols="12"
                         lg="8"
@@ -34,7 +36,7 @@
                       >
                         <v-text-field
                          dark
-                          label="Escriba el dominio que desea registrar"
+                          label="Escriba el dominio que desea buscar"
                           outlined
                           clearable
                           filled
@@ -67,11 +69,11 @@
                 </v-row>
            </v-form>
       </v-col>
-          </v-row>
-        </v-slide-x-transition>
-      </v-container>
-        </v-img>
-       <v-container>
+      </v-row>
+    </v-slide-x-transition>
+ </v-container>
+  </v-img>
+<v-container>
        <v-row>
            <v-col cols="12"
                     lg="12"
@@ -159,16 +161,20 @@
               </tr>
             </tbody>
           </template>
-        </v-simple-table>
-        </v-container>
+    </v-simple-table>
+</v-container>
 </section>
-  
+</div>
 </template>
 <script>
 // import axios from 'axios';
-
+import vueHeadful from 'vue-headful';
 export default {
-    data: () =>({
+  components:{
+    vueHeadful
+  },
+      data: () =>({
+        title:'WhoIs',
         items:[
             {
                 'text':'Resultado de la búsqueda WhoIs',

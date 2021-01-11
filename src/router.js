@@ -75,6 +75,12 @@ const router = new Router({
                 import ('@/views/IniciarSesion')
         },
         {
+            path: '/recuperarcontraseña',
+            name: 'recuperarcontraseña',
+            component: () =>
+                import ('@/views/RecuperarContraseña')
+        },
+        {
             path: '/crearusuario',
             name: 'crearusuario',
             component: () =>
@@ -97,7 +103,14 @@ const router = new Router({
             name: 'cursocisco',
             component: () =>
                 import ('@/views/CursoCisco')
+        },
+        {
+            path: '/dashboard',
+            name: 'dashboard',
+            component: () =>
+                import ('@/views/DashBoard')
         }
+
 
     ]
 })

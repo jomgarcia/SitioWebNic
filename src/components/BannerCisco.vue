@@ -44,7 +44,6 @@
             <router-link :to="{name: 'cursocisco'}">
             <v-img
             class="v-img"
-              maxheight="42px"
               max-width="178px"
               src="../assets/img/cisco.png"
             >

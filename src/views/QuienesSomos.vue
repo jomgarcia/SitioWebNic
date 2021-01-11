@@ -1,5 +1,6 @@
 <template>
   <section id="quienessomos">
+    <vue-headful :title="title"/>
     <v-container>
       <v-row>
         <v-col 
@@ -31,9 +32,13 @@
   </section>
 </template>
 <script>
+import vueHeadful from 'vue-headful';
 export default {
- 
+  components:{
+    vueHeadful
+  },
         data:() => ({
+          title:'Quienes Somos',
           titulo:[
             {
               'text': '¿Qué es el Nic.ni?'

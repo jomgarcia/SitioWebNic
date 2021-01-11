@@ -189,12 +189,18 @@ export default {
           },
           {
             src:require('../assets/img/5.jpg'),
+            text:'Android vs IOs, ¿qué sistema operativo ofreece mejor productividad?',
+            url:'https://www.nic.ni/noticias/noticia/1040'
           },
           {
             src:require('../assets/img/6.jpg'),
+            text:'Curiosidades de las versiones de ASP.NET MVC',
+            url:'https://www.nic.ni/noticias/noticia/1039'
           },
           {
             src:require('../assets/img/7.jpg'),
+            text:'Direcciones IPv4 ¿recurso de Internet en agotamiento?',
+            url:'https://www.nic.ni/noticias/noticia/1038'
           },
         ],
       }

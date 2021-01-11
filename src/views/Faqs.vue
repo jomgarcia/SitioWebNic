@@ -1,4 +1,6 @@
 <template>
+<div>
+    <vue-headful :title="title"/>
  <section id="faqs">
      <v-container>
          <v-row>
@@ -36,11 +38,18 @@
          </v-row>
      </v-container>
  </section>
+
+</div>
 </template>
 <script>
+import vueHeadful from 'vue-headful';
 export default {
+    components:{
+        vueHeadful
+    },
     data () {
         return {
+            title:'Faqs',
             faqs: [
                 {
                     pregunta:'¿Que es un Dominio?',

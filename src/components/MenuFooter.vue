@@ -139,7 +139,7 @@
                     </v-list-item-icon>
 
                     <v-list-item-content>
-                    <v-list-item-title class="lista"><a href="">Facebook</a></v-list-item-title>
+                    <v-list-item-title class="lista"><a href="https://www.facebook.com/dominios.ni" target="_blank">Facebook</a></v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item>
@@ -150,7 +150,7 @@
                     </v-list-item-icon>
 
                     <v-list-item-content>
-                    <v-list-item-title class="lista"> <a href="">Twitter</a></v-list-item-title>
+                    <v-list-item-title class="lista"> <a href="https://twitter.com/nic_nicaragua" target="_blank">Twitter</a></v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item>
@@ -161,7 +161,7 @@
                     </v-list-item-icon>
 
                     <v-list-item-content>
-                    <v-list-item-title class="lista"><a href="">Instagram</a></v-list-item-title>
+                    <v-list-item-title class="lista"><a href="https://www.instagram.com/nic.nicaragua/" target="_blank">Instagram</a></v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item>
@@ -172,7 +172,7 @@
                     </v-list-item-icon>
 
                     <v-list-item-content>
-                    <v-list-item-title class="lista"><a href="">YouTube</a></v-list-item-title>
+                    <v-list-item-title class="lista"><a href="https://www.youtube.com/channel/UCepzgpbq0Auu7fVSbGLSa4g" target="_blank">YouTube</a></v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item>
@@ -182,7 +182,7 @@
                     </v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
-                    <v-list-item-title class="lista"><a href="">LinkedIn</a></v-list-item-title>
+                    <v-list-item-title class="lista"><a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEwzRuZ7OaWewAAAXX_6l4YXnBDcEvW11EdmyhZN38eMNYhePI751lmmZEoY7z5T-EDdGOJ8DuTB48CCMQl5f_KDkMUyu98cAYc5oPO55KSd3lEyNcrCcG3UOK9iEW_kP_HpTU=&originalReferer=https://www.nic.ni/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnicni%2F%3Ftrk%3Dhp-identity-name" target="_blank">LinkedIn</a></v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
             </v-list>

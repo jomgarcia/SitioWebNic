@@ -1,4 +1,6 @@
 <template>
+<div>
+  <vue-headful :title="title"/>
   <section>
       <v-container>
           <v-row>
@@ -10,7 +12,7 @@
               >
               <h1 class="display-1">Formulario de Contacto</h1>
                 <v-card-subtitle>Los campos marcados con <span class="rojo">*</span> son obligatorios</v-card-subtitle>
-
+              <form> 
                <v-card-subtitle>Nombres <span class="rojo">*</span></v-card-subtitle>
                <v-text-field
                color="indigo darken-4"
@@ -48,20 +50,21 @@
                 filled
                 auto-grow
              ></v-textarea>
-               <vue-recaptcha ref="recaptcha"
+               <!-- <vue-recaptcha ref="recaptcha"
                 @verify="onVerify" sitekey="6LcAsOsZAAAAAO3CMeVwQpSPxpYozx72WgFu9XKu">
-              </vue-recaptcha>
+              </vue-recaptcha> -->
              <v-btn
                  color="blue darken-4"
                 class="text-capitalize white--text"
                 x-large
-                @click="submit"
+              
                 >
                  Enviar
                 </v-btn>
+                </form>
               </v-col> 
               <!-- aqui termina formulario -->
-              <v-col cols="12"
+              <!-- <v-col cols="12"
                     lg="6"
                     md="12"
                     sm="12"
@@ -88,15 +91,22 @@
                 </tbody>
               </template>
             </v-simple-table>
-              </v-col>
+              </v-col> -->
           </v-row>
       </v-container>
   </section>
+  
+</div>
 </template>
 
 <script>
+import vueHeadful from 'vue-headful';
 export default {
+  components:{
+    vueHeadful
+  },
     data: () => ({
+      title:'Contáctenos',
      
        datosOficina: [
           {
@@ -141,47 +151,6 @@ export default {
         v => /.+@.+/.test(v) || 'Correo debe ser valido',
       ],
     }),
-     computed:{
-        form(){
-            return {
-                nombre: this.nombre,
-                apellido:this.apellido,
-                mensaje:this.mensaje,
-                email:this.email,
-            }
-        },
-    },
-    watch:{
-        nombre() {
-            this.errorMessages = ''
-        },
-    },
-
-    methods: {
-      reserve () {
-        this.loading = true
-
-        setTimeout(() => (this.loading = false), 2000)
-      },
-    resetForm(){
-        this.errorMessages = []
-        this.formHasErrors = false
-
-        Object.keys(this.fomr).forEach(f =>{
-            this.$refs[f].reset()
-        })
-
-    },
-    submit (){
-        this.formHasErrors = false
-
-        Object.keys(this.form).forEach(f => {
-            if(!this.form[f]) this.formHasErrors = true
-            
-            this.$refs[f].validate(true)
-        })
-    },
-    },
     
 }
 </script>

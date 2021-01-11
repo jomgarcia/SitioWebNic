@@ -1,6 +1,6 @@
 <template>
 <div id="inicio">
-
+<vue-headful :title="title"/>
 <bienvenido-nic class="img-top" />
 
 
@@ -73,11 +73,12 @@
   </div>
 </template>
 <script>
+import vueHeadful from 'vue-headful';
 
 export default {
   // @ is an alias to /src
   components:{
-    
+    vueHeadful,
     BannerCisco: () => import ('@/components/BannerCisco'),
     CardPhone: () => import ('@/components/CardPhone'),
     Parnerts: () => import ('@/components/Parnerts'),
@@ -85,7 +86,7 @@ export default {
     NoticiaNic: () => import ('@/components/NoticiaNic')
   },
   data: () =>({
-
+    title:'Inicio',
     items: [
       {
         'text':' VENTAJAS DE  TENER UN DOMINIO .NI'

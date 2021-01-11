@@ -1,6 +1,9 @@
 <template>
+<div>
+<vue-headful :title="title"/>
 
     <v-container>
+      
       <v-row>
         <v-col 
           cols="12" lg="12" md="12"
@@ -27,12 +30,18 @@
       </v-row>
     </v-container>
   
+</div>
 </template>
-
 <script>
+import vueHeadful from 'vue-headful';
 export default {
+  components:{
+    vueHeadful
+  },
     data:() => ({
-          titulo:[
+      title:'Historia de Nic Nicaragua',
+      
+      titulo:[
             {
               'text': 'Historia de Nic Nicaragua'
             }

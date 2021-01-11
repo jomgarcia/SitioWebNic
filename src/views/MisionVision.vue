@@ -1,4 +1,6 @@
 <template>
+<div>
+  <vue-headful :title="title"/>
     <section id="historia">
     <v-container>
      
@@ -45,10 +47,17 @@
       </v-row>
     </v-container>
   </section>
+  </div>
 </template>
 <script>
+import vueHeadful from 'vue-headful';
+
 export default {
+  components:{
+  vueHeadful
+  },
     data:() => ({
+      title:'Misión y Visión',
           titulo:[
             {
               'text': 'Nuestra Misión'
