@@ -109,9 +109,13 @@ const router = new Router({
             name: 'dashboard',
             component: () =>
                 import ('@/views/DashBoard')
+        },
+        {
+            path: '/compradominio',
+            name: 'compradominio',
+            component: () =>
+                import ('@/views/CompraDominio')
         }
-
-
     ]
 })
 export default router

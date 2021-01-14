@@ -42,8 +42,6 @@
                 {{item.text}}
                 </p>
         </v-col>
-  
-        
       </v-row>
     </v-container>
   </section>
