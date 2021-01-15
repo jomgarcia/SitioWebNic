@@ -11,7 +11,7 @@
                         sm="12"
                       >
                         <v-text-field
-                         dark
+                     
                           label="Escriba el dominio que desea registrar"
                           outlined
                           clearable
@@ -30,7 +30,7 @@
                           :items="items"
                           label="Dominio"
                           outlined
-                         dark
+                      
                           filled
                         >
                         </v-select>
@@ -88,7 +88,7 @@ export default {
     color: #fff;
 }
  .theme--light.v-input input, .theme--light.v-input textarea{
-   color: #fff !important;
+   color: #000 !important;
   
  }
  .theme--light.v-select .v-select__selection--comma {
