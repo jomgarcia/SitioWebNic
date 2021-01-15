@@ -14,7 +14,8 @@
                 <v-card-title class="display-1"
                     v-for="(item, i) in items2"
                     :key="('A' + i)"
-                >{{item.text}}</v-card-title>
+                >{{item.text}}
+                </v-card-title>
                 <v-card-subtitle
                 v-for="(item, i) in items2"
                     :key="('B' + i)"
